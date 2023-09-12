@@ -346,7 +346,16 @@ usuario_escrito = 'peter'
 print(usuario_de_bd == usuario_escrito)
 ```
 
+***
+
 ## **CONDICIONALES**
+ejecuta un codigo si se cumple una condicion:
 
+```py
 
+if edad > = 18:
+    print("Eres mayor de edad")
+else:
+    print('No eres mayor')
+```
 
