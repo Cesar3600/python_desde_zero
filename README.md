@@ -304,7 +304,7 @@ print(tipo_de_dato4) #dict
 ## **OPERADORES DE COMPARACION**
 
 >[!WARNING]
->**cuadro**
+>**CUADRO**
 >|operador|comparacion|
 >|:---|:---------------------|
 >| == | es igual que         |
@@ -313,6 +313,38 @@ print(tipo_de_dato4) #dict
 >| <= | es menor o igual que |
 >| <  | es mayor que         |
 >| >= | es mayor o igual que |
+
+```py
+
+es_igual_que = 5 == 6  
+print(es_igual_que)
+#False
+
+es_distinto_de = 5 != 6  
+print(es_distinto_de)
+#True
+
+mayor_que = 5 > 6
+print(mayor_que)
+#False
+
+menor_que = 5 < 6
+print(menor_que)
+#True
+
+mayor_o_igual = 5 >= 6
+print(mayor_o_igual)
+#True
+
+menor_o_igual = 5 <= 6
+print(menor_o_igual)
+#True
+
+#ejemplo de comparacion
+usuario_de_bd = 'Lucas'
+usuario_escrito = 'peter'
+print(usuario_de_bd == usuario_escrito)
+```
 
 ## **CONDICIONALES**
 
