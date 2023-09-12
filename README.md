@@ -236,4 +236,85 @@ diccionario = {
 diccionario['nombre']  #devuelve Delia Alva 
 ```
 
+## **OPERADORES ARITMETICOS**
+
+### **suma & resta**
+```py
+
+suma = 12 + 5
+print(suma)
+
+resta = 12 - 5
+print(resta)
+```
+
+### **multiplicacion & division**
+
+```py
+multiplicacion = 12 * 5 # 60
+print(multiplicacion)
+
+division = 12 / 5 # 2.4 devuelve float
+print(division)
+```
+### **potenciacion y division baja**
+```py
+#potenciacion (exponente) (**)
+exponente = 12**5
+print(exponente) # 248832
+
+#division baja
+se refiere al entero de la division
+division_baja = 12//5  # 2
+print(division_baja)
+
+```
+
+### **modulo**
+devuelve el resto
+```py
+modulo = 12%5  # 2
+print(modulo)
+```
+### **exponente**
+realiza exponenciacion
+```py
+exponenciacion = 2**3
+print(exponenciacion) #8
+```
+
+### **tipo de dato**
+```py
+tipo_de_dato1 = type(["hola",12])
+print(tipo_de_dato1) #list
+
+tipo_de_dato2 = type(("hola",12))
+print(tipo_de_dato2) #tuple
+
+tipo_de_dato3 = type({"hola",12})
+print(tipo_de_dato3) #set
+
+tipo_de_dato4 = type({"nombre":"Cesar"})
+print(tipo_de_dato4) #dict
+
+```
+
+***
+
+## **OPERADORES DE COMPARACION**
+
+>[!INFO]
+>**cuadro**
+>|operador|comparacion|
+>|:---|:---------------------|
+>| == | es igual que         |
+>| != | es distinto de       |
+>| <  | es menor que         |
+>| <= | es menor o igual que |
+>| <  | es mayor que         |
+>| >= | es mayor o igual que |
+
+## **CONDICIONALES**
+
+
 
