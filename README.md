@@ -155,7 +155,85 @@ nombre_de_hija = 'Mikaela'
 bienvenida_a_hija = f"Hola {nombre}. mi todo!"
 ```
 
+***
+
+## **DATOS COMPUESTOS**
+
+### **LISTA**
+conjunto de elementos que pueden ser modificados
+puedes mostrar la lista o un elemento colocando su index entre [ ]:
+
+```py
+lista = ['Delia','Catherine','Cesar',True,333]
+print(lista)     #devuelve -> ['Delia', 'Catherine', 'Cesar', True, 333]
+
+print(lista[1])  #devuelve -> Catherine
+
+print(lista[2] = 'Arturo') #devuelve -> Arturo
+```
+
+> [!INFO]
+> **Para los iniciados**
+> el index o la posicion empezando desde la izquierda siempre vale 0
 
 
+### **TUPLA**
+lista de elementos
+no se puede modificar
+utiliza ( ) para agrupar contenido
+
+```py
+#tupla
+tupla = ('Delia','Catherine','Cesar',True,333)
+print(tupla)
+
+print(tupla[0])
+#modificando tupla, no se puede modificar
+tupla[0] = 'Maria'
+print(tupla[0])
+# Traceback (most recent call last):
+#   File "c:\Users\cesar\Documents\practicas\python_desde_zero\datos-compuestos.py", line 15, in <module>
+#     tupla[0] = 'Maria'
+#     ~~~~~^^^
+# TypeError: 'tuple' object does not support item assignment
+```
+
+### CONJUNTO
+a. Conjunto de elementos.
+b. No muestra datos duplicados.
+c. No permite modificar los elementos internos.
+d. A diferencia de las tuplas no permite acceder a los elementos del conjunto.
+e. No permite repetir valores.
+f. Para acceder a sus elementos se debe usar un bucle.
+g. Son datos desordenados.
+
+```py
+#creando un conjunto (set)
+conjunto = {'Delia','Catherine','Cesar',True,333}
+
+#mal
+conjunto[0] = 'Mal caracter'
+
+#bien
+conjunto = {"Aqui si deja modificar el conjunto"}
+```
+
+### DICCIONARIO
+a. Utiliza { }.
+b. Literalmente es un JSON.
+c. Es una lista.
+d. Muestra los datos por el nombre asociado.
+e. Tiene una estructura key : value.
+
+```py
+diccionario = {
+  'nombre':"Delia Alva",
+  'sexo':"Mujer",
+  'emocionada':True,
+  'altura':1.65
+}
+
+diccionario['nombre']  #devuelve Delia Alva 
+```
 
 
