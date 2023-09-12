@@ -303,7 +303,7 @@ print(tipo_de_dato4) #dict
 
 ## **OPERADORES DE COMPARACION**
 
->[!INFORMATION]
+>[!WARNING]
 >**cuadro**
 >|operador|comparacion|
 >|:---|:---------------------|
