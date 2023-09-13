@@ -5,15 +5,15 @@
 ## **POR QUE USAR PYTHON**
 
 > [!IMPORTANT]
-> 1.facil de entender.
-> 2.facil de aprender.
-> 3.fácil de usar.
-> 4.uso de identacion.
-> 5.gran biblioteca standard de codigo para pdoer ser reutilizado.
-> 6.se pude mesclar con otros lenguajes de programacion.
-> 7.es multiplataforma, puede correr en cualquier sistema operativo (windows, linux y mac)
-> 8.es multiparadigma, se puede aplicar a mac, linux, windows.
-> 9.bien pagado.
+> 1. facil de entender.
+> 2. facil de aprender.
+> 3. fácil de usar.
+> 4. uso de identacion.
+> 5. gran biblioteca standard de codigo para pdoer ser reutilizado.
+> 6. se pude mesclar con otros lenguajes de programacion.
+> 7. es multiplataforma, puede correr en cualquier sistema operativo (windows, linux y mac)
+> 8. es multiparadigma, se puede aplicar a mac, linux, windows.
+> 9. bien pagado.
 
 ***
 
