@@ -454,7 +454,9 @@ o sea que te manda error y detiene el proyecto.
 busqueda_index = cadena1.index("C")
 print(busqueda_index) # 9 cuando no encuentra
 ```
-
+>[!NOTE]
+>****
+>
 ### **isnumeric**
 Devuelve true si un string contiene un numero. si no es un string devuelve excepcion
 
@@ -472,7 +474,6 @@ si es falta numerico devuelve true
 alfanumerico = "hola123"
 is_alpha = alfanumerico.isalpha()
 print(is_alpha) #True
-
 ```
 ### **count**
 Devuelve la cantidad de coincidencias
@@ -481,11 +482,63 @@ Devuelve la cantidad de coincidencias
 texto_count = "hola mundo desde lima Peru"
 count_elements = texto_count.count("a")
 print(count_elements) #2
+```
+### **len**
+no es un metodo, es una funcion.
+Devuelve, cuenta la cantidad de caracteres de una cadena.
 
+```py
+texto_len = "hola mundo desde lima Peru"
+count_elements = len(texto_len)
+print(count_elements) #2
+```
+### **startswidth**
+Es un metodo.
+Devuelve booleano si encuentra que la cadena empieze con lo que se le indica.
+
+```py
+texto_startsWidth = "hola mundo desde lima Peru"
+elements_startswidth = texto_startsWidth.startswidth("H")
+print(elements_startswidth) #2
+```
+### **endswidth**
+Es un metodo.
+Devuelve booleano si encuentra que la cadena termine con lo que se le indica.
+
+```py
+texto_endsWith = "hola mundo desde lima Peru"
+elements_endswith = texto_endsWith.endswith("h")
+print(elements_endswith) 
 ```
 
+### **replace**
+1. Es un metodo.
+2. Devuelve booleano si encuentra que la cadena empieze con lo que se le indica.
+3. si no encuentra el texto a reemplazar simplemente no lo cambia
+4. tiene 2 parametros: el primero reemplaza al segundo.
+
+```py
+cadena_nueva = "hola mundo! desde lima, Peru"
+cadena_replace = cadena_nueva.replace("lima","amazonas")
+print(cadena_replace) 
+```
+### **split**
+1. Separa cadenas segun el elemento que le indiques
+
+```py
+cadena_nueva = "Hola mundo! desde lima, Peru"
+cadena_split = cadena_nueva.split(",")
+print(cadena_split) # ['hola mundo! desde Lima', ' Peru']
+```
+
+
 ***
+
 ## **METODO DE LISTA**
+
+
+
+
 ***
 ## **METODO DE DICCIONARIO**
 ***
