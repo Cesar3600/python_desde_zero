@@ -18,15 +18,15 @@
 ***
 
 ## **QUE SE PUEDE HACER CON PYTHON**
-
-A. desarrollar paginas webs del lado del servidor.
-B. 2 frameworks : flask & django para desarrollar sitios webs.
-C. aplicaciones moviles, desktop.
-D. automatizacion.
-E. ciencias de datos y machine learning.
-F. desarrollo de software.
-G. automatizacio de pruebas de software.
-H. Se pueden crear juegos.
+>[!IMPORTANT]
+> 1. desarrollar paginas webs del lado del servidor.
+> 2. 2 frameworks : flask & django para desarrollar sitios webs.
+> 3. aplicaciones moviles, desktop.
+> 4. automatizacion.
+> 5. ciencias de datos y machine learning.
+> 6. desarrollo de software.
+> 7. automatizacio de pruebas de software.
+> 8. Se pueden crear juegos.
 
 ***
 
@@ -36,10 +36,10 @@ H. Se pueden crear juegos.
 > ir a https://www.python.org/downloads/
 > descargar la ultima version
 
-a. puedes buscar el interpreste de python (buscar python 3.10 o el que hallas instalado).
-b. Usar en vs code.
-c. Extensiones: python, prettier, python indent
-d. el formato de python es .py
+1. puedes buscar el interpreste de python (buscar python 3.10 o el que hallas instalado).
+2. Usar en vs code.
+3. Extensiones: python, prettier, python indent
+4. el formato de python es .py
 
 >[!NOTE]
 >**RECUERDA**
@@ -199,13 +199,13 @@ print(tupla[0])
 ```
 
 ### CONJUNTO
-a. Conjunto de elementos.
-b. No muestra datos duplicados.
-c. No permite modificar los elementos internos.
-d. A diferencia de las tuplas no permite acceder a los elementos del conjunto.
-e. No permite repetir valores.
-f. Para acceder a sus elementos se debe usar un bucle.
-g. Son datos desordenados.
+1. Conjunto de elementos.
+2. No muestra datos duplicados.
+3. No permite modificar los elementos internos.
+4. A diferencia de las tuplas no permite acceder a los elementos del conjunto.
+5. No permite repetir valores.
+6. Para acceder a sus elementos se debe usar un bucle.
+7. Son datos desordenados.
 
 ```py
 #creando un conjunto (set)
@@ -219,11 +219,11 @@ conjunto = {"Aqui si deja modificar el conjunto"}
 ```
 
 ### DICCIONARIO
-a. Utiliza { }.
-b. Literalmente es un JSON.
-c. Es una lista.
-d. Muestra los datos por el nombre asociado.
-e. Tiene una estructura key : value.
+1. Utiliza { }.
+2. Literalmente es un JSON.
+3. Es una lista.
+4. Muestra los datos por el nombre asociado.
+5. Tiene una estructura key : value.
 
 ```py
 diccionario = {
