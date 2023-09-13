@@ -172,7 +172,7 @@ print(lista[1])  #devuelve -> Catherine
 print(lista[2] = 'Arturo') #devuelve -> Arturo
 ```
 
-> [!INFO]
+> [!NOTE]
 > **Para los iniciados**
 > el index o la posicion empezando desde la izquierda siempre vale 0
 
@@ -361,7 +361,7 @@ else:
 
 
 ## **OPERADORES LOGICOS**
->[!INFO]
+>[!NOTE]
 > OR, AND, NOT 
 
 ```py
@@ -388,7 +388,7 @@ resultado = not False | False  # devolver True
 ## **METODOS DE CADENA**
 dir muestra los metodos que podemos emplear en un string o cadena.
 
->[!INFO]
+>[!NOTE]
 >los metodos son funciones especificas de objetos
 >No todas las funciones no son metodos
 
@@ -409,10 +409,10 @@ print(dir(4))
 """['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']"""
 ```
 
-### **UPPER**
+### **upper**
 cambia el string a mayuscula
 
->[!INFO]
+>[!NOTE]
 >**formato**
 >string.upper()
 >
@@ -424,7 +424,7 @@ print(resultado)
 #HOLA SOY CESAR
 ```
 
-### **LOWER**
+### **lower**
 ```py
 resultado2 = cadena2.lower()
 print(resultado2)
