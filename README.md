@@ -359,3 +359,135 @@ else:
     print('No eres mayor')
 ```
 
+
+## **OPERADORES LOGICOS**
+>[!INFO]
+> OR, AND, NOT 
+
+```py
+#AND
+resultado1 = True  & True   # devolver True
+resultado2 = False & True   # devolver False
+resultado3 = True  & False  # devolver False
+resultado4 = False & False  # devolver False
+
+
+#OR
+resultado1 = True  | True   # devolver True
+resultado2 = False | True   # devolver True
+resultado3 = True  | False  # devolver True
+resultado4 = False | False  # devolver False
+
+
+#NOT
+resultado = not True  | False  # devolver False
+resultado = not False | False  # devolver True
+```
+
+***
+## **METODOS DE CADENA**
+dir muestra los metodos que podemos emplear en un string o cadena.
+
+>[!INFO]
+>los metodos son funciones especificas de objetos
+>No todas las funciones no son metodos
+
+### **METODOS DE NUMBERS**
+
+```py
+cadena1 = "Hola soy Cesar"
+cadena2 = "Bienvenido kaezar"
+print(dir(cadena1))
+
+""" ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill'] """
+```
+
+### **METODOS DE NUMBERS**
+```py
+print(dir(4))
+
+"""['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']"""
+```
+
+### **UPPER**
+cambia el string a mayuscula
+
+>[!INFO]
+>**formato**
+>string.upper()
+>
+
+```py
+cadena1 = "Hola soy Cesar" 
+resultado = cadena1.upper() 
+print(resultado)
+#HOLA SOY CESAR
+```
+
+### **LOWER**
+```py
+resultado2 = cadena2.lower()
+print(resultado2)
+```
+
+### **capitalize**
+```py
+resultado2 = cadena2.capitalize()
+print(resultado2)
+```
+### **find**
+busca una coincidencia y devuelve la primera posicion que encuentre.
+si no encuentra devuelve -1
+
+```py
+busqueda_find = cadena1.find("a")
+print(busqueda_find) # 3 por la posiciondonde encuentra la primera a
+
+busqueda_find = cadena1.find("d")
+print(busqueda_find) # -1 cuando no encuentra
+```
+
+### **index**
+busca una coincidencia y devuelve la posicion, en caso que no encuentre te manda un excepcion
+o sea que te manda error y detiene el proyecto.
+```py
+busqueda_index = cadena1.index("C")
+print(busqueda_index) # 9 cuando no encuentra
+```
+
+### **isnumeric**
+Devuelve true si un string contiene un numero. si no es un string devuelve excepcion
+
+```py
+numero = "123"
+es_numerico = numero.isnumeric()
+print(es_numerico) #True
+```
+
+
+### **isalpha**
+si es falta numerico devuelve true
+
+```py
+alfanumerico = "hola123"
+is_alpha = alfanumerico.isalpha()
+print(is_alpha) #True
+
+```
+### **count**
+Devuelve la cantidad de coincidencias
+
+```py
+texto_count = "hola mundo desde lima Peru"
+count_elements = texto_count.count("a")
+print(count_elements) #2
+
+```
+
+***
+## **METODO DE LISTA**
+***
+## **METODO DE DICCIONARIO**
+***
+## **ENTRADA DE LOS DATOS INPUTS**
+***
