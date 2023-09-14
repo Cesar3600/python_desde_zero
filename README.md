@@ -454,9 +454,7 @@ o sea que te manda error y detiene el proyecto.
 busqueda_index = cadena1.index("C")
 print(busqueda_index) # 9 cuando no encuentra
 ```
->[!NOTE]
->****
->
+
 ### **isnumeric**
 Devuelve true si un string contiene un numero. si no es un string devuelve excepcion
 
@@ -524,17 +522,119 @@ print(cadena_replace)
 ```
 ### **split**
 1. Separa cadenas segun el elemento que le indiques
-
 ```py
 cadena_nueva = "Hola mundo! desde lima, Peru"
 cadena_split = cadena_nueva.split(",")
 print(cadena_split) # ['hola mundo! desde Lima', ' Peru']
 ```
 
-
 ***
 
 ## **METODO DE LISTA**
+### **list**
+Crea una lista
+```py
+lista = list("hola","dalto",34)
+print(lista)
+```
+### **len**
+Cuenta la gran cantidad de elementos de una lista.
+```py
+cadena = "hola"
+longitud= len(cadena)
+print(longitud)
+
+# Cantidad de elementos con len
+listaCantidad = len(["hola","dalto",34,True,"vida",12])
+print(listaCantidad)
+```
+
+### **append**
+1. Agrega un elemento en la lista.
+2. no necesita que sea almacenado en una variable
+
+```py
+#append
+lista = list(["hola","dalto",33,"Delia"])
+lista.append("Mikaela")
+print(lista)
+```
+### **insert**
+Permite insertar un elemento dentro de una lista controlando la posicion donde se inserte.
+
+```py
+# insert
+lista = list(["hola","dalto",33,"Delia"])
+list_insert = lista.insert(2,"dato insertado")
+print(list_insert)
+```
+### **extend**
+Agrega varios elementos a la lista.
+necesita que se le agregue una lista.
+
+```py
+#extends
+listaExtend = list(["hola","Mikaela","Delia"])
+listaExtend.extend([33,'tri',77,'soda stereo'])
+print(listaExtend)
+```
+### **pop**
+eliminar un elemento de la lista por su indice.
+
+```py
+#pop
+listaExtend = list(["hola","Mikaela","Delia"])
+listaExtend.pop(0)
+print(listaExtend)
+
+#eliminar el ultimo
+listaExtend.pop(-1)
+#eliminar el penultimo
+listaExtend.pop(-2)
+```
+
+### **remove**
+eliminar un elemento de la lista por su indice.
+si no encuentra entonces manda excepcion
+
+```py
+#remove
+listaExtend = list(["hola","Mikaela","Delia","otro"])
+listaExtend.remove(3)
+print(listaExtend)
+```
+### **clear**
+Eliminar todos los elementos de la lista.
+
+```py
+#clear
+listaClear= list(["hola","Mikaela","Delia","otro"])
+listaClear.clear()
+print(listaClear)
+```
+### **sort**
+ordena numeros de una lista
+
+```py
+#sort
+listaSort = list([12,33,True,34,56,False])
+listaSort.sort(reverse=False)
+print(listaSort)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

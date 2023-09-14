@@ -81,6 +81,72 @@ print(string_split[1])   # devuelve una lista ' Peru'
 
 
 
+#list
+lista = list(["hola","dalto",34])
+print(lista)
+
+# Cantidad de elementos con len
+textCantidad = len("hola")
+print(textCantidad)
+
+# Cantidad de elementos con len
+listaCantidad = len(["hola","dalto",34,True,"vida",12])
+print(listaCantidad)
+
+#append
+lista = list(["hola","dalto",33,"Delia"])
+lista.append("Mikaela")
+print(lista)
+
+#insert
+lista = list(["hola","dalto",33,"Delia"])
+list_insert = lista.insert(2,"dato insertado")
+print(list_insert)
+
+#extend
+listaExtend = list(["hola","Mikaela","Delia"])
+listaExtend.extend([33,'tri',77,'soda stereo'])
+print(listaExtend)
+
+#pop
+listaExtend = list(["hola","Mikaela","Delia","Cesar"])
+listaExtend.pop(0)
+print(listaExtend)
+print(len(listaExtend))
+
+#eliminar el ultimo
+listaExtend.pop(-1)
+print(listaExtend)
+
+#eliminar el penultimo
+listaExtend.pop(-2)
+print(listaExtend)
+
+
+listaFamilia = list(["Mikaela","Delia","Cesar","walli"])
+listaFamilia.remove("walli")
+print(listaFamilia)
+
+
+listaClear= list(["hola","Mikaela","Delia","otro"])
+listaClear.clear()
+print(listaClear)
+
+
+listaSort = list([12,33,True,34,56,False])
+listaSort.sort(reverse=True)
+print(listaSort) #[56, 34, 33, 12, True, False]
+
+listaSort.sort(reverse=False)
+print(listaSort) #[False, True, 12, 33, 34, 56]
+
+listaSort.reverse()
+print(listaSort) #[56, 34, 33, 12, True, False]
+
+
+
+
+
 
 
 
