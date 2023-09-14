@@ -632,7 +632,7 @@ print(listaSort)
 
 ***
 ## **METODO DE DICCIONARIO**
-**keys()**
+### **keys()**
 devuelve las claves en un array.
 ```py
 diccionario = {
@@ -646,7 +646,7 @@ print(claves) #dict_keys(['nombre', 'apellido', 'subs'])
 ```
 
 
-**get()**
+### **get()**
 devuelve el valor de una clave
 podemos usar : diccionario("nombre") para obtener el valor de nombre
 sin embargo, si no encuentra el dato mandara una excepcion
@@ -672,7 +672,7 @@ print(valor) #lucas
 ```
 
 
-**clear()**
+### **clear()**
 elimina todos los elementos
 
 ```py
@@ -684,7 +684,7 @@ print(diccionario)
 
 
 
-**pop()**
+### **pop()**
 elimina un elemento pasandole su index.
 
 ```py
@@ -703,15 +703,15 @@ print(diccionario) #{'nombre': 'Cesar', 'apellido': 'Contreras', 'distrito': 'In
 ```
 
 
-**items()**
+### **items()**
 itera el dict (diccionario)
 
 ```py
 
 ```
 
-
 ***
+
 ## **ENTRADA DE LOS DATOS INPUTS**
 ```py
 # INPUTS
