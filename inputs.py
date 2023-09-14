@@ -23,3 +23,4 @@ print(resultado)
 num = input("ingresa un numero: ")
 res = int(num)
 print(res)
+#antes de 2h:46 min

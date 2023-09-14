@@ -731,13 +731,10 @@ print(resultado)
 numero = 27
 resultado = float(numero) * 2
 print(resultado)
-
-
 ```
-
-
-
-
-
-
 ***
+
+
+
+
+
