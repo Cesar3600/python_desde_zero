@@ -630,17 +630,114 @@ print(listaSort)
 
 
 
-
-
-
-
-
-
-
-
-
 ***
 ## **METODO DE DICCIONARIO**
+**keys()**
+devuelve las claves en un array.
+```py
+diccionario = {
+  "nombre":"lucas",
+  "apellido":"dalto",
+  "subs":1000000,
+}
+
+claves = diccionario.keys()
+print(claves) #dict_keys(['nombre', 'apellido', 'subs'])
+```
+
+
+**get()**
+devuelve el valor de una clave
+podemos usar : diccionario("nombre") para obtener el valor de nombre
+sin embargo, si no encuentra el dato mandara una excepcion
+al contrario de get que si no encuentra devuelv e none
+
+```py
+diccionario = {
+  "nombre":"lucas",
+  "apellido":"dalto",
+  "subs":1000000,
+}
+
+valor = diccionario.get("nombre")
+print(valor) #lucas
+
+diccionario = {
+  0:"mirko",
+  1:"novick",
+  2:56,
+}
+valor = diccionario.get(1)
+print(valor) #lucas
+```
+
+
+**clear()**
+elimina todos los elementos
+
+```py
+#clear
+diccionario = ['elemento1','elemento2']
+diccionario.clear()
+print(diccionario)
+```
+
+
+
+**pop()**
+elimina un elemento pasandole su index.
+
+```py
+diccionario = ['elemento1','elemento2']
+diccionario.pop(1)
+print(diccionario) #['elemento1']
+
+diccionario = {
+  "nombre":"Cesar",
+  "apellido":"Contreras",
+  "edad":46,
+  "distrito":"Independencia",
+}
+diccionario.pop("edad")
+print(diccionario) #{'nombre': 'Cesar', 'apellido': 'Contreras', 'distrito': 'Independencia'}
+```
+
+
+**items()**
+itera el dict (diccionario)
+
+```py
+
+```
+
+
 ***
 ## **ENTRADA DE LOS DATOS INPUTS**
+```py
+# INPUTS
+# pedirle un dato al usuario
+nombre = input("cual es tu nombre:")
+print(f"el nombre es {nombre}")
+
+# cual es tu nombre: Cesar
+# el nombre es Cesar
+
+numero = 33
+#convierto el numero a entero y l  multiplico por 2
+resultado = int(numero) * 2
+print(resultado)
+
+#convierto el numero a flotante y l  multiplico por 2
+numero = 27
+resultado = float(numero) * 2
+print(resultado)
+
+
+```
+
+
+
+
+
+
 ***
