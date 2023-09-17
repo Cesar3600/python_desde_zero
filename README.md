@@ -531,6 +531,15 @@ print(cadena_split) # ['hola mundo! desde Lima', ' Peru']
 ***
 
 ## **METODO DE LISTA**
+
+>[!NOTE]
+>***LAS TUPLAS Y LOS CONJUNTOS SON INMUTABLES***
+>
+
+>[!NOTE]
+>***NO SE PUEDE USAR INDEX EN CONJUNTO ***
+
+
 ### **list**
 Crea una lista
 ```py
@@ -654,9 +663,9 @@ al contrario de get que si no encuentra devuelv e none
 
 ```py
 diccionario = {
-  "nombre":"lucas",
-  "apellido":"dalto",
-  "subs":1000000,
+  "nombre"   : "lucas",
+  "apellido" : "dalto",
+  "subs"     : 1000000,
 }
 
 valor = diccionario.get("nombre")
@@ -673,7 +682,7 @@ print(valor) #lucas
 
 
 ### **clear()**
-elimina todos los elementos
+Elimina todos los elementos.
 
 ```py
 #clear
@@ -685,7 +694,7 @@ print(diccionario)
 
 
 ### **pop()**
-elimina un elemento pasandole su index.
+Elimina un elemento pasandole su index.
 
 ```py
 diccionario = ['elemento1','elemento2']
@@ -693,10 +702,10 @@ diccionario.pop(1)
 print(diccionario) #['elemento1']
 
 diccionario = {
-  "nombre":"Cesar",
-  "apellido":"Contreras",
-  "edad":46,
-  "distrito":"Independencia",
+  "nombre"   : "Cesar",
+  "apellido" : "Contreras",
+  "edad"     : 46,
+  "distrito" : "Independencia",
 }
 diccionario.pop("edad")
 print(diccionario) #{'nombre': 'Cesar', 'apellido': 'Contreras', 'distrito': 'Independencia'}
@@ -732,7 +741,153 @@ numero = 27
 resultado = float(numero) * 2
 print(resultado)
 ```
+
 ***
+
+
+### **VARIABLES 2.0**
+
+## **DESEMPAQUETADO DE VARIABLES**
+funciona solo si existe una cantidad de variabloes igual a la cantidad de elementos
+en caso contrario mandara excepcion
+
+sirve por ejemplo en funciones que nos devuelven tuplas, listas, ...
+
+```py
+datos = ("Katherine","Alva")
+
+nombre,apellido = datos
+
+print(nombre) #Katherine
+print(apellido) #Alva
+```
+
+
+## **TUPLAS**
+se puede crear la tupla de las 2 formas:
+
+> [!NOTE]
+> de deben crear cuando son datos de solo lectura,
+> manejan mejor la memoria
+> normalmente las listas al ser modificables guardan en dos lugares en memoria.
+> primero modifican en un lugar y luego en el otro.
+> en cambio las tuplas solo se guardan en un sitio haciendola inmutable
+> 
+
+```py
+tupla = tuple(["datos1","datos2"])
+print(tupla) #('datos1', 'datos2')
+
+#tambien se puede crear : 
+tupla2 = "datos1","datos2"
+print(tupla2)
+```
+si quieres crear una tupla desde un solo elemento tiene que agregar una "," al final
+
+```py
+tupla3 = "dato1",
+print(type(tupla3))
+```
+
+## **CONJUNTOS - SET**
+Los datos dentro del conjunto no son modificables.
+
+para crear un set necesitas un iterable
+
+
+```py
+conjunto = set(['dato 1','dato 2'])
+
+print(conjunto) # {'dato 2', 'dato 1'}
+```
+
+Esto no se puede:
+No se puede agregar un conjunto dentro de otro conjunto simplemente insertandolo.
+
+```py
+conjunto1 = {"dato1","dato2"}
+conjunto2 = {conjunto1,"dato3"}
+print(conjunto2) 
+```
+
+### **frozenset**
+permite unir conjuntos o sets
+
+```py
+conjunto1 = frozenset(["dato1","dato2"])
+conjunto2 = {conjunto1,"dato3"}
+
+print(conjunto2) #{frozenset({'dato2', 'dato1'}), 'dato3'}
+```
+
+> [!NOTE]
+> La teoria de conjunto se aplica a la inteligencia artificial
+> si tenemos 2 conjuntos:
+>
+> A = {a,b,c}
+> B ={a,b,c,d,e,f}
+> 
+>quiere decir que B es un superconjunto de A
+> quiere decir que A es un subconjunto de B
+
+
+## **TEORIA DE CONJUNTOS**
+
+### **issubset**
+devuelve true o false dependiendo si es conjunto es un subconjunto de:
+
+```py
+#teoria de conjuntos
+conjuntonr1 = {1,3,5,7}
+conjuntonr2 = {1,3,7}
+
+resultado = conjuntonr2.issubset(conjuntonr1)
+print(resultado)
+```
+
+## **DICCIONARIO**
+
+```py
+# creando diccionarios con dict()
+diccionario = dict(nombre="Cesar",apellido="Contreras")
+print(diccionario) #{'nombre': 'Cesar', 'apellido': 'Contreras'}
+
+# esta es otra manera de crear un diccionario
+# {"nombre":"Cesar","apellido":"Contreras"}
+
+
+
+
+```
+
+### **fromkeys**
+el primer valor es lo que vamos a interar
+el segundo valor es lo que vamos a igualar
+
+```py
+diccionario = dict.fromkeys("ABCDE","VALOR") 
+print(diccionario)
+# {'A': 'VALOR', 'B': 'VALOR', 'C': 'VALOR', 'D': 'VALOR', 'E': 'VALOR'}
+```
+
+podriamos usar
+
+```py
+diccionario = dict.fromkeys(["nombre","apellido","suscriptores"]) 
+
+print(diccionario)  #{'nombre': None, 'apellido': None}
+print(diccionario['apellido'])  #None
+```
+
+
+## **BUCLE FOR**
+
+
+
+
+
+
+
 
 
 
